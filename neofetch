@@ -812,7 +812,7 @@ image_source="auto"
 #       Slackware, SunOS, LinuxLite, OpenSUSE, Raspbian,
 #       postmarketOS, and Void have a smaller logo variant.
 #       Use '{distro name}_small' to use the small variants.
-ascii_distro="auto"
+ascii_distro="BengalBoot"
 
 # Ascii Colors
 #
@@ -9036,9 +9036,10 @@ dmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd
 EOF
         ;;
 
+    case $(trim "$ascii_distro") in
         "BengalBoot"*)
             set_colors 2 1 2
-            read -rd '' ascii_data <<'EOF'
+            read -rd '' ascii_data <<'EOF'  
 ${c1}      .                                         
     .......                                     
   ............. ..                              
