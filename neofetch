@@ -5291,7 +5291,8 @@ get_distro_ascii() {
         "BengalBoot"*)
             set_colors 2 1 2
             read -rd '' ascii_data <<'EOF'  
-${c1}      .                                         
+${c1}
+      .                                         
     .......                                     
   ............. ..                              
      .............                              
